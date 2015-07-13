@@ -6,8 +6,8 @@ mixin link(name)
 
 mixin nav(name)
   - var CURRENT_PAGE = name
-  nav
-    p= 'CURRENT_PAGE: ' + CURRENT_PAGE
+  nav.hide
+    //- p= 'CURRENT_PAGE: ' + CURRENT_PAGE
     ul
       li: +link('') Home
       li: +link('about') About

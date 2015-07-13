@@ -1,0 +1,10 @@
+@import "../util";
+.gallery {
+  height: ai(500);
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: $content-padding;
+}
+.gallery__img {
+  height: 100%;
+}

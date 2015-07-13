@@ -1,0 +1,8 @@
+@function ai($px-size) {
+  @return ($px-size / 16 / 2) * 1em;
+}
+
+$peri-red: #D45447;
+$peri-blue: #40A4C4;
+$content-padding: ai(43);
+$border-width: 1px;

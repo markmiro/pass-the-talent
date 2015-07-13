@@ -6,13 +6,14 @@ mixin page(name, title)
     head
 
       if title
-        title= title + ' - Web Starter Kit'
+        title= title + ' - #PassTheTalent'
       else
-        title Web Starter Kit
+        title #PassTheTalent
 
       include _meta
 
       //--Page styles
+      link(href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700', rel='stylesheet', type='text/css')
       link(rel='stylesheet', href='/styles/main.css')
 
     body

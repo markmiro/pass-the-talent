@@ -1,10 +1,35 @@
 include _/_page
 
 +page('home', 'Home')
-  main
-    h1 Hello this is the home page.
-    p Lorem ipsum Tempor pariatur amet reprehenderit consectetur commodo elit eu amet culpa.
-  h2 Look at the colums!
-  section
-    aside What is it about?
-    article Neat is an open source semantic grid framework built on top of Sass and Bourbon…
+  .hamburger
+  main.hero
+    img.header__logo(src="/images/ptt_logo.png")
+    h1
+      .hero__title A live, interactive<br>talent show
+      small.hero__subtitle on this new thing called Periscope.
+    p.hide
+      | Sorry if this is a dumb question, but
+      br
+      a(href="#todo") what is Periscope?
+    a.btn.btn--inverted.btn--primary(href='#todo') See Calendar
+    a.btn.btn--inverted(href="#todo") Apply
+    .learn-more Learn more
+    
+  .content
+    h2.heading
+      | Some examples of talent you’ve<br>already missed.
+      small.subheading Musicians, Magicians, Artists,<br>Poets, Comedians...
+  .gallery
+    img.gallery__img(src="/images/IMG_1141.png")
+    img.gallery__img(src="/images/IMG_1272.png")
+    img.gallery__img(src="/images/IMG_0334.png")
+  .content
+    a.btn(href="#todo") See more
+    //- h2.heading So how exactly does this<br>talent show work?
+  .footer.content
+    img.footer__logo(src="/images/ptt_logo.png")
+    .footer__copyright © Copyright 2015. All Rights Reserved.<br>We are not affiliated with Periscope.
+    //- h2 Look at the colums!
+    //- section
+    //-   aside What is it about?
+    //-   article Neat is an open source semantic grid framework built on top of Sass and Bourbon…

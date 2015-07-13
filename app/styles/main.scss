@@ -2,14 +2,146 @@
 @import "bourbon";  // Use this for its functions and addons
 @import "neat";     // Grid framework
 
+@import "components/components";
+@import "util";
+
 * { box-sizing: border-box; }
 
-a.active {
-  color: gray !important;
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: ai(36);
 }
 
-section {
-  @include outer-container;
-  aside { @include span-columns(3); }
-  article { @include span-columns(9); }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}
+
+// section {
+//   @include outer-container;
+//   aside { @include span-columns(3); }
+//   article { @include span-columns(9); }
+// }
+
+.btn {
+  padding: ai(20) ai(30);
+  text-decoration: none;
+  border: $border-width solid;
+  border-radius: ai(6);
+  margin-bottom: 0.6em;
+  color: $peri-blue;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.btn--inverted {
+  color: white;
+}
+.btn--primary {
+  border-color: transparent;
+  background: $peri-blue;
+  color: white;
+}
+
+.hamburger {
+  width: ai(80);
+  height: ai(80);
+  background-color: darken($peri-blue, 0%);
+  position: fixed;
+  right: 0;
+  background-image: url(/images/ptt_hamburger.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  right: $content-padding;
+}
+
+.hero {
+  padding: $content-padding;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: flex-start;
+  background-image: url(/images/ptt_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  a {
+    color: white;
+  }
+}
+.header__logo {
+  position: absolute;
+  top: $content-padding;
+  left: 50%;
+  transform: translateX(-50%);
+  width: ai(190);
+}
+.hero__title {
+  font-size: ai(80);
+  margin-top: 0.7em;
+}
+.hero__subtitle {
+  font-weight: normal;
+  margin: 0.3em 0 1.5em;
+  display: block;
+}
+
+.heading {
+  font-size: ai(43);
+  text-align: center;
+  margin: 4em 0 1.5em;
+  line-height: 1.15;
+}
+.subheading {
+  display: block;
+  font-size: ai(24);
+  font-weight: normal;
+  opacity: 0.5;
+  margin-top: 0.25em;
+}
+
+.learn-more {
+  position: absolute;
+  bottom: 2em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0.5;
+  &:after {
+    content: '';
+    width: 1em;
+    height: 1em;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg) ;
+    border-bottom: $border-width solid;
+    border-right: $border-width solid;
+  }
+}
+.content {
+  padding: 0 $content-padding;
+}
+
+.footer {
+  background: #ccc;
+  text-align: center;
+  // color: rgba(white, 0.5);
+  color: white;
+  font-size: ai(24);
+  line-height: 1.25;
+  padding-top: $content-padding*2;
+  padding-bottom: $content-padding*2;
+}
+.footer__logo {
+  height: ai(200);
+  // opacity: 0.5;
+}
+.footer__copyright {
+  margin-top: 0.5em;
 }
