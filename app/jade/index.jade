@@ -1,18 +1,13 @@
 include _/_page
 
 +page('home', 'Home')
-  .hamburger
-  main.hero
+  main.hero.hero--home
     img.header__logo(src="/images/ptt_logo.png")
     h1
       .hero__title A live, interactive<br>talent show
       small.hero__subtitle on this new thing called Periscope.
-    p.hide
-      | Sorry if this is a dumb question, but
-      br
-      a(href="#todo") what is Periscope?
-    a.btn.btn--inverted.btn--primary(href='#todo') See Calendar
-    a.btn.btn--inverted(href="#todo") Apply
+    a.btn.btn--inverted.btn--primary(href='schedule') See Calendar
+    a.btn.btn--inverted(href="apply") Apply
     .learn-more Learn more
     
   .content
@@ -25,10 +20,10 @@ include _/_page
     img.gallery__img(src="/images/IMG_0334.png")
   .content
     a.btn(href="#todo") See more
+  .content
+    h2.heading How it works
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     //- h2.heading So how exactly does this<br>talent show work?
-  .footer.content
-    img.footer__logo(src="/images/ptt_logo.png")
-    .footer__copyright © Copyright 2015. All Rights Reserved.<br>We are not affiliated with Periscope.
     //- h2 Look at the colums!
     //- section
     //-   aside What is it about?

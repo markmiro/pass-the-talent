@@ -1,13 +1,21 @@
 - var HOME_PAGE = 'home'
+- var CURRENT_PAGE
 
 mixin link(name)
-  a(href='/'+name, class=(CURRENT_PAGE==name || (CURRENT_PAGE==HOME_PAGE && name=='')) ? 'active':'')
+  - var isActive = (name == CURRENT_PAGE) ? 'active' : ''
+  - var url = (name == HOME_PAGE) ? '/' : '/'+name
+  a(href=url, class=isActive+' '+name+'-link nav__link')
     block
 
 mixin nav(name)
-  - var CURRENT_PAGE = name
-  nav.hide
+  - CURRENT_PAGE = name
+  a.hamburger(href="#")
+  nav.nav.hide
     //- p= 'CURRENT_PAGE: ' + CURRENT_PAGE
     ul
-      li: +link('') Home
+      li: +link('home') Home
       li: +link('about') About
+      li: +link('alumni') Alumni
+      li: +link('schedule') Schedule
+      li: +link('apply') Apply
+      li: +link('partners') Sponsors and Partners
