@@ -1,0 +1,21 @@
+{
+  "name": "usersite.github.io",
+  "version": "0.5.3",
+  "homepage": "https://github.com/markmiro/usersite.github.io",
+  "authors": [
+    "Mark Miro <markmirony@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reset-scss": "*"
+  }
+}
