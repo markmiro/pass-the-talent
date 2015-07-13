@@ -2,6 +2,6 @@
 
 git config --global user.name "CI-Server"
 git config --global user.email "ci@example.com"
-git remote set-url origin git@github.com:markmiro/usersite.github.io.git
+git remote set-url origin git@github.com:markmiro/pass-the-talent.github.io.git
 
 npm install
