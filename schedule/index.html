@@ -36,36 +36,103 @@
         </nav>
     <div class="hero">
       <h1 class="content">
-        <div class="page__title">Schedule</div>
+        <div class="page__title">Weekly Schedule</div>
       </h1>
     </div>
-    <div class="content">
+    <div class="content u__center">
       <div class="row">
         <div class="column">
           <h2 class="heading">
             <div class="js-local-time"></div>
             <div class="subheading">6:30pm PST / 9:30pm EST</div>
           </h2>
-          <hr>
         </div>
+        <hr>
         <div class="column">
           <h2 class="heading">Sunday
-            <div class="subheading">Dance / Magic</div>
+            <div class="subheading">#PPTbios (odd weeks)</div>
           </h2>
+          <p>Fireside chat with a #PTTalum</p>
+          <div class="subheading">#PTTattempts (even weeks)</div>
+          <p>Watch your #PTTalum comically try at new art forms</p>
           <h2 class="heading">Monday
-            <div class="subheading">Literature / Theater</div>
+            <div class="subheading">Literary Arts</div>
           </h2>
-          <ul>
-            <li> </li>
+          <ul class="tags">
+            <li class="tag">Poets</li>
+            <li class="tag">Spoken Word Artists</li>
+            <li class="tag">Actors/Actresses</li>
+            <li class="tag">Authors</li>
+            <li class="tag">Motivational speakers</li>
+            <li class="tag">etc.</li>
+          </ul>
+          <h2 class="heading">Tuesday
+            <div class="subheading">Music</div>
+          </h2>
+          <ul class="tags">
+            <li class="tag">Singers</li>
+            <li class="tag">Beatboxers</li>
+            <li class="tag">Rappers</li>
+            <li class="tag">Dancers</li>
+            <li class="tag">Pianists</li>
+            <li class="tag">Guitarists</li>
+            <li class="tag">Saxophonists</li>
+            <li class="tag">Percussionists</li>
+            <li class="tag">Disc Jockeys</li>
+            <li class="tag">Composers</li>
+            <li class="tag">Beatmakers</li>
+            <li class="tag">etc.</li>
           </ul>
           <h2 class="heading">Wednesday
-            <div class="subheading">Vocal Arts</div>
-          </h2>
-          <h2 class="heading">Thursday
-            <div class="subheading">Visual / Fine Arts</div>
-          </h2>
-          <h2 class="heading">Friday
             <div class="subheading">Comedy</div>
+          </h2>
+          <ul class="tags">
+            <li class="tag">Comedians</li>
+            <li class="tag">Stand-Up</li>
+            <li class="tag">Sketch</li>
+            <li class="tag">Improv</li>
+            <li class="tag">Magicians</li>
+            <li class="tag">Illusionists</li>
+            <li class="tag">Mime Artists</li>
+            <li class="tag">Impersonators</li>
+            <li class="tag">Puppeteers</li>
+            <li class="tag">Ventriloquists</li>
+            <li class="tag">etc.</li>
+          </ul>
+          <h2 class="heading">Thursday
+            <div class="subheading">Music</div>
+          </h2>
+          <ul class="tags">
+            <li class="tag">Singers</li>
+            <li class="tag">Beatboxers</li>
+            <li class="tag">Rappers</li>
+            <li class="tag">Dancers</li>
+            <li class="tag">Pianists</li>
+            <li class="tag">Guitarists</li>
+            <li class="tag">Saxophonists</li>
+            <li class="tag">Percussionists</li>
+            <li class="tag">Disc Jockeys</li>
+            <li class="tag">Composers</li>
+            <li class="tag">Beatmakers</li>
+            <li class="tag">etc.</li>
+          </ul>
+          <h2 class="heading">Friday
+            <div class="subheading">Visual Arts</div>
+          </h2>
+          <ul class="tags">
+            <li class="tag">Photographers</li>
+            <li class="tag">Cinematographers</li>
+            <li class="tag">Designers</li>
+            <li class="tag">Graffiti Artists</li>
+            <li class="tag">Painters</li>
+            <li class="tag">Sculptors</li>
+            <li class="tag">Illustrators</li>
+            <li class="tag">Cartoonists</li>
+            <li class="tag">Caricaturists</li>
+            <li class="tag">etc.</li>
+          </ul>
+          <h2 class="heading">Saturday
+            <div class="subheading">N/A</div>
           </h2>
         </div>
       </div>
@@ -74,7 +141,6 @@
     <script>
       (function () {
         'use strict';
-        console.log('hi');
         var localTime = moment.tz('9:30pm', 'h:mma', 'America/New_York').local().format('h:mma');
         document.querySelector('.js-local-time').innerHTML = localTime;
       })();
@@ -84,14 +150,28 @@
         <h3 class="instructions__heading">How to watch us</h3>
         <div class="instructions">
           <ol>
-            <li>1. Follow <a href="https://twitter.com/passthetalent" class="link--inverted" target="_blank">@PassTheTalent</a> on Twitter.</li>
-            <li>2. Log into <a href="https://www.periscope.tv" class="link--inverted">Periscope</a> with your Twitter account.</li>
-            <li>3. Watch us at 6pm.</li>
+            <li>1. Log into <a href="https://www.periscope.tv" class="link--inverted">Periscope</a> with your Twitter account.</li>
+            <li>2. Follow <a href="https://twitter.com/passthetalent" class="link--inverted" target="_blank">@PassTheTalent</a> on Twitter.</li>
+            <li>3. Watch us at 6:30pm PST / 9:30pm EST</li>
           </ol>
-        </div><img src="/images/ptt_logo.png" class="footer__logo">
+        </div>
+        <hr>
+        <h3 class="instructions__heading">Share</h3><!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="addthis_sharing_toolbox"></div>
+        <hr><img src="/images/ptt_logo.png" class="footer__logo">
         <div class="footer__copyright">© Copyright 2015. All Rights Reserved.<br>We are not affiliated with Periscope.</div>
       </div>
     </div>
     <script src="/scripts/main.min.js"></script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55c7c1558ba1c895" async="async"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-66137332-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>
